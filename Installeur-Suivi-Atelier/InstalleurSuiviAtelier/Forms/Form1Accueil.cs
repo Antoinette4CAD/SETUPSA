@@ -66,7 +66,7 @@ namespace InstalleurSuiviAtelier
         //Il est nécessaire de cliquer une case
         private void InitListBox()
         {
-
+            
             /* Reference to your resources class -- may be named differently in your case */
             ResourceManager MyResourceClass =
                 new ResourceManager(typeof(Resources));
