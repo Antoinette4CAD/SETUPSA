@@ -56,7 +56,7 @@
     <ManifestKeyFile>InstalleurSuiviAtelier_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <GenerateManifests>true</GenerateManifests>
+    <GenerateManifests>false</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>true</SignManifests>
@@ -215,6 +215,7 @@
     <None Include="Properties\Resources\webApps\SuiviAtelier-5.2.3-pro.war" />
     <None Include="Properties\Resources\webApps\SuiviAtelier-5.2.4-pro.war" />
     <None Include="Properties\Resources\webApps\SuiviAtelier-5.2.7-pro.war" />
+    <None Include="Properties\Resources\webApps\SuiviAtelier-5.2.8-pro.war" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
