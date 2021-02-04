@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,6 +17,7 @@ namespace InstalleurSuiviAtelier
 
         public static byte[] getVersionInstall()
         {
+            //Properties.Resources.
             switch (versionInstall)
             {
                 case "5.0.6":
@@ -42,8 +44,10 @@ namespace InstalleurSuiviAtelier
                     return Properties.Resources.SuiviAtelier_5_2_4_pro;
                 case "5.2.7":
                     return Properties.Resources.SuiviAtelier_5_2_7_pro;
+                case "5.2.8":
+                    return Properties.Resources.SuiviAtelier_5_2_8_pro;
                 default:
-                    throw new Exception();
+                    throw new Exception("Erreur. Une version du SA n'est sûrement pas renseignée dans InstallInfos.");
             }
         }
 

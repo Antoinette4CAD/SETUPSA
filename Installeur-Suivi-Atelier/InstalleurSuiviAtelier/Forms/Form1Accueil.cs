@@ -7,6 +7,7 @@ using System.Resources;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using System.Diagnostics;
+using System.Data;
 
 namespace InstalleurSuiviAtelier
 {
@@ -66,7 +67,20 @@ namespace InstalleurSuiviAtelier
         //Il est nécessaire de cliquer une case
         private void InitListBox()
         {
-            
+            DataTable dt = new DataTable();
+
+            //2 colonnes, 
+            //une avec le nom affiché dans la liste déroulante (5.2.8)
+            //une avec un pointeur vers la vraie ressource (type byte[])
+
+            //J'ajoute toutes mes ressources
+
+            //Dans la page d'accueil j'affiche la 1 ere colonne pour chaque ligne [2]
+
+            //dt.Columns.Add()
+
+
+
             /* Reference to your resources class -- may be named differently in your case */
             ResourceManager MyResourceClass =
                 new ResourceManager(typeof(Resources));
@@ -78,6 +92,10 @@ namespace InstalleurSuiviAtelier
 
             foreach (DictionaryEntry entry in resourceSet)
             {
+
+                //REMPLISSAGE DE LA DT  ICI MEME
+
+
                 string resourceName = entry.Key.ToString();
 
 
@@ -90,7 +108,6 @@ namespace InstalleurSuiviAtelier
                     resourceName = resourceName.Insert(3, ".");
 
                     listeVersions.Add(resourceName);
-                    //listBoxWebApps.Items.Add(resourceName);
                 }
 
             }

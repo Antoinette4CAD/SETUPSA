@@ -35,6 +35,7 @@
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.listBoxWebApps = new System.Windows.Forms.ListBox();
+            this.cbVersions = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -105,11 +106,25 @@
             this.listBoxWebApps.TabIndex = 7;
             this.listBoxWebApps.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
+            // cbVersions
+            // 
+            this.cbVersions.FormattingEnabled = true;
+            this.cbVersions.Items.AddRange(new object[] {
+            "5.1",
+            "5.2",
+            "5.3",
+            "1000.10"});
+            this.cbVersions.Location = new System.Drawing.Point(368, 332);
+            this.cbVersions.Name = "cbVersions";
+            this.cbVersions.Size = new System.Drawing.Size(121, 24);
+            this.cbVersions.TabIndex = 8;
+            // 
             // Form1Accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(582, 553);
+            this.Controls.Add(this.cbVersions);
             this.Controls.Add(this.listBoxWebApps);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.buttonUpdate);
@@ -136,6 +151,7 @@
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListBox listBoxWebApps;
+        private System.Windows.Forms.ComboBox cbVersions;
     }
 }
 
