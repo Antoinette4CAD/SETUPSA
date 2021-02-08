@@ -29,129 +29,174 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1Accueil));
-            this.label1 = new System.Windows.Forms.Label();
-            this.buttonInstall = new System.Windows.Forms.Button();
-            this.labelWarning = new System.Windows.Forms.Label();
-            this.buttonUpdate = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.listBoxWebApps = new System.Windows.Forms.ListBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.buttonAnnuler = new System.Windows.Forms.Button();
+            this.buttonSuivant = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.rbNouvelleInstall = new System.Windows.Forms.RadioButton();
+            this.rbMaj = new System.Windows.Forms.RadioButton();
             this.cbVersions = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // richTextBox1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(430, 84);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Installeur application web\r\nSuivi Atelier";
+            this.richTextBox1.Location = new System.Drawing.Point(1, -9);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(141, 367);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = "";
             // 
-            // buttonInstall
+            // richTextBox2
             // 
-            this.buttonInstall.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonInstall.Location = new System.Drawing.Point(132, 450);
-            this.buttonInstall.Name = "buttonInstall";
-            this.buttonInstall.Size = new System.Drawing.Size(150, 58);
-            this.buttonInstall.TabIndex = 1;
-            this.buttonInstall.Text = "Nouvelle installation";
-            this.buttonInstall.UseVisualStyleBackColor = true;
-            this.buttonInstall.Click += new System.EventHandler(this.ButtonInstall_Click);
+            this.richTextBox2.Location = new System.Drawing.Point(-134, 316);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(484, 44);
+            this.richTextBox2.TabIndex = 9;
+            this.richTextBox2.Text = "";
             // 
-            // labelWarning
+            // buttonAnnuler
             // 
-            this.labelWarning.AutoSize = true;
-            this.labelWarning.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWarning.ForeColor = System.Drawing.Color.Red;
-            this.labelWarning.Location = new System.Drawing.Point(117, 126);
-            this.labelWarning.Name = "labelWarning";
-            this.labelWarning.Size = new System.Drawing.Size(352, 48);
-            this.labelWarning.TabIndex = 3;
-            this.labelWarning.Text = "Veillez à bien avoir lancé l\'application\r\nen mode administrateur\r\n";
-            this.labelWarning.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonAnnuler.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F);
+            this.buttonAnnuler.Location = new System.Drawing.Point(266, 326);
+            this.buttonAnnuler.Name = "buttonAnnuler";
+            this.buttonAnnuler.Size = new System.Drawing.Size(71, 23);
+            this.buttonAnnuler.TabIndex = 10;
+            this.buttonAnnuler.Text = "Annuler";
+            this.buttonAnnuler.UseVisualStyleBackColor = true;
+            this.buttonAnnuler.Click += new System.EventHandler(this.buttonAnnuler_Click);
             // 
-            // buttonUpdate
+            // buttonSuivant
             // 
-            this.buttonUpdate.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUpdate.Location = new System.Drawing.Point(291, 450);
-            this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(150, 58);
-            this.buttonUpdate.TabIndex = 4;
-            this.buttonUpdate.Text = "Mise à jour";
-            this.buttonUpdate.UseVisualStyleBackColor = true;
-            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+            this.buttonSuivant.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F);
+            this.buttonSuivant.Location = new System.Drawing.Point(183, 326);
+            this.buttonSuivant.Name = "buttonSuivant";
+            this.buttonSuivant.Size = new System.Drawing.Size(71, 23);
+            this.buttonSuivant.TabIndex = 11;
+            this.buttonSuivant.Text = "Suivant >";
+            this.buttonSuivant.UseVisualStyleBackColor = true;
+            this.buttonSuivant.Click += new System.EventHandler(this.buttonSuivant_Click);
             // 
-            // label4
+            // groupBox1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(31, 233);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(506, 24);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Choisissez votre version puis votre mode d\'installation \r\n";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.buttonSuivant);
+            this.groupBox1.Controls.Add(this.rbNouvelleInstall);
+            this.groupBox1.Controls.Add(this.buttonAnnuler);
+            this.groupBox1.Controls.Add(this.rbMaj);
+            this.groupBox1.Controls.Add(this.cbVersions);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.richTextBox2);
+            this.groupBox1.Location = new System.Drawing.Point(138, -9);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(352, 367);
+            this.groupBox1.TabIndex = 14;
+            this.groupBox1.TabStop = false;
             // 
-            // listBoxWebApps
+            // label2
             // 
-            this.listBoxWebApps.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxWebApps.FormattingEnabled = true;
-            this.listBoxWebApps.ItemHeight = 17;
-            this.listBoxWebApps.Location = new System.Drawing.Point(212, 271);
-            this.listBoxWebApps.Name = "listBoxWebApps";
-            this.listBoxWebApps.Size = new System.Drawing.Size(150, 157);
-            this.listBoxWebApps.TabIndex = 7;
-            this.listBoxWebApps.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F);
+            this.label2.Location = new System.Drawing.Point(44, 223);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(123, 14);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Version d\'installation :";
+            // 
+            // rbNouvelleInstall
+            // 
+            this.rbNouvelleInstall.AutoSize = true;
+            this.rbNouvelleInstall.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F);
+            this.rbNouvelleInstall.Location = new System.Drawing.Point(44, 247);
+            this.rbNouvelleInstall.Name = "rbNouvelleInstall";
+            this.rbNouvelleInstall.Size = new System.Drawing.Size(133, 18);
+            this.rbNouvelleInstall.TabIndex = 18;
+            this.rbNouvelleInstall.TabStop = true;
+            this.rbNouvelleInstall.Text = "Nouvelle installation";
+            this.rbNouvelleInstall.UseVisualStyleBackColor = true;
+            this.rbNouvelleInstall.CheckedChanged += new System.EventHandler(this.rbNouvelleInstall_CheckedChanged);
+            // 
+            // rbMaj
+            // 
+            this.rbMaj.AutoSize = true;
+            this.rbMaj.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F);
+            this.rbMaj.Location = new System.Drawing.Point(183, 247);
+            this.rbMaj.Name = "rbMaj";
+            this.rbMaj.Size = new System.Drawing.Size(83, 18);
+            this.rbMaj.TabIndex = 17;
+            this.rbMaj.TabStop = true;
+            this.rbMaj.Text = "Mise à jour";
+            this.rbMaj.UseVisualStyleBackColor = true;
+            this.rbMaj.CheckedChanged += new System.EventHandler(this.rbMaj_CheckedChanged);
             // 
             // cbVersions
             // 
+            this.cbVersions.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F);
             this.cbVersions.FormattingEnabled = true;
-            this.cbVersions.Items.AddRange(new object[] {
-            "5.1",
-            "5.2",
-            "5.3",
-            "1000.10"});
-            this.cbVersions.Location = new System.Drawing.Point(368, 332);
+            this.cbVersions.Location = new System.Drawing.Point(173, 220);
             this.cbVersions.Name = "cbVersions";
-            this.cbVersions.Size = new System.Drawing.Size(121, 24);
-            this.cbVersions.TabIndex = 8;
+            this.cbVersions.Size = new System.Drawing.Size(66, 21);
+            this.cbVersions.TabIndex = 16;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(27, 71);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(287, 139);
+            this.label4.TabIndex = 15;
+            this.label4.Text = resources.GetString("label4.Text");
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(-4, 27);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(356, 24);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Bienvenue dans l\'installeur 4CAD";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1Accueil
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(4F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(582, 553);
-            this.Controls.Add(this.cbVersions);
-            this.Controls.Add(this.listBoxWebApps);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.buttonUpdate);
-            this.Controls.Add(this.labelWarning);
-            this.Controls.Add(this.buttonInstall);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(489, 358);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.richTextBox1);
             this.Font = new System.Drawing.Font("Bahnschrift Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.MaximumSize = new System.Drawing.Size(600, 600);
-            this.MinimumSize = new System.Drawing.Size(600, 600);
+            this.MaximumSize = new System.Drawing.Size(630, 500);
+            this.MinimumSize = new System.Drawing.Size(18, 47);
             this.Name = "Form1Accueil";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "4CAD - Installeur suivi atelier";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button buttonInstall;
-        private System.Windows.Forms.Label labelWarning;
-        private System.Windows.Forms.Button buttonUpdate;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ListBox listBoxWebApps;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Button buttonAnnuler;
+        private System.Windows.Forms.Button buttonSuivant;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.RadioButton rbNouvelleInstall;
+        private System.Windows.Forms.RadioButton rbMaj;
         private System.Windows.Forms.ComboBox cbVersions;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label1;
     }
 }
 

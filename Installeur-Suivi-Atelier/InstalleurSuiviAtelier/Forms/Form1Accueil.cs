@@ -17,49 +17,48 @@ namespace InstalleurSuiviAtelier
         {
             InitializeComponent();
             InitListBox();
-
-
+            this.buttonSuivant.Enabled = false;
         }
 
-        //On passe au formulaire suivant
-        private void ButtonInstall_Click(object sender, EventArgs e)
-        {
-            if (clickButtonGlobal())
-            {
-                Form2CreationRepSA f2 = new Form2CreationRepSA();
-                f2.ShowDialog();
-            }
+        ////On passe au formulaire suivant
+        //private void ButtonInstall_Click(object sender, EventArgs e)
+        //{
+        //    if (clickButtonGlobal())
+        //    {
+        //        Form2CreationRepSA f2 = new Form2CreationRepSA();
+        //        f2.ShowDialog();
+        //    }
 
-        }
+        //}
 
-        private void buttonUpdate_Click(object sender, EventArgs e)
-        {
-            if (clickButtonGlobal())
-            {
-                Form15UpdateSA f2 = new Form15UpdateSA();
-                f2.ShowDialog();
-            }
-        }
+        //private void buttonUpdate_Click(object sender, EventArgs e)
+        //{
+        //    if (clickButtonGlobal())
+        //    {
+        //        Form15UpdateSA f2 = new Form15UpdateSA();
+        //        f2.ShowDialog();
+        //    }
+        //}
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
         }
 
-        private bool clickButtonGlobal()
-        {
-            if (listBoxWebApps.SelectedItem == null)
-            {
-                MessageBox.Show("Veuillez selectionner une version du Suivi Atelier à mettre en place.", "Choix de version manquant",
-    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
-            else
-            {
-                this.Hide();
-                InstallInfos.versionInstall = listBoxWebApps.SelectedItem.ToString();
-                return true;
-            }
-        }
+    //    private bool clickButtonGlobal()
+    //    {
+    //        if (listBoxWebApps.SelectedItem == null)
+    //        {
+    //            MessageBox.Show("Veuillez selectionner une version du Suivi Atelier à mettre en place.", "Choix de version manquant",
+    //MessageBoxButtons.OK, MessageBoxIcon.Warning);
+    //            return false;
+    //        }
+    //        else
+    //        {
+    //            this.Hide();
+    //            InstallInfos.versionInstall = listBoxWebApps.SelectedItem.ToString();
+    //            return true;
+    //        }
+    //    }
 
         //Récupère les différentes version du suivi atelier 
         //formate les noms des ressources, et place dans la liste les différentes versions,
@@ -118,10 +117,52 @@ namespace InstalleurSuiviAtelier
             //Puis on ajoute tout à l'élément graphique ListBox
             foreach (string s in listeVersions)
             {
-                listBoxWebApps.Items.Add(s);
+                //listBoxWebApps.Items.Add(s);
+                cbVersions.Items.Add(s);
             }
 
-            Trace.WriteLine(listBoxWebApps.Sorted);
+            //Trace.WriteLine(listBoxWebApps.Sorted);
+        }
+
+        private void buttonSuivant_Click(object sender, EventArgs e)
+        {
+            if (cbVersions.SelectedItem != null)
+            {
+                InstallInfos.versionInstall = cbVersions.SelectedItem.ToString();
+                this.Hide();
+                if (rbMaj.Checked)
+                {
+                    //On est en mise à jour
+                    Form15UpdateSA f2 = new Form15UpdateSA();
+                    f2.ShowDialog();
+                }
+                else
+                {
+                    //Nouvelle install
+                    Form2CreationRepSA f2 = new Form2CreationRepSA();
+                    f2.ShowDialog();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Veuillez selectionner une version du Suivi Atelier à mettre en place.", "Choix de version manquant",
+MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void buttonAnnuler_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void rbNouvelleInstall_CheckedChanged(object sender, EventArgs e)
+        {
+            buttonSuivant.Enabled = true;
+        }
+
+        private void rbMaj_CheckedChanged(object sender, EventArgs e)
+        {
+            buttonSuivant.Enabled = true;
         }
     }
 }

@@ -53,6 +53,8 @@ namespace InstalleurSuiviAtelier.Forms
                     buttonSkip.Enabled = true;
                     buttonSkip.Show();
 
+                    //buttonSuivan.Enabled = false;
+                    labelJAVA_HOME.Visible = false;
                     buttonSuivant.Enabled = false;
                     textBoxJAVA_HOME.Hide();
                     buttonParcourir.Hide();
@@ -105,6 +107,13 @@ namespace InstalleurSuiviAtelier.Forms
             this.Hide();
             Form4InstallTomcat f4 = new Form4InstallTomcat();
             f4.Show();
+        }
+
+        private void buttonPrecedent_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2CreationRepSA f2 = new Form2CreationRepSA();
+            f2.Show();
         }
     }
 }

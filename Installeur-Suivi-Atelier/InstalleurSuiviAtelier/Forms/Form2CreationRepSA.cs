@@ -97,5 +97,17 @@ namespace InstalleurSuiviAtelier.Forms
             Form3JavaPathAndOpenJDK f3 = new Form3JavaPathAndOpenJDK();
             f3.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1Accueil f1 = new Form1Accueil();
+            f1.Show();
+        }
+
+        private void buttonAnnuler_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
