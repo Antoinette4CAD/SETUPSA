@@ -66,7 +66,7 @@ namespace InstalleurSuiviAtelier
         //Il est nécessaire de cliquer une case
         private void InitListBox()
         {
-            DataTable dt = new DataTable();
+            //DataTable dt = new DataTable();
 
             //2 colonnes, 
             //une avec le nom affiché dans la liste déroulante (5.2.8)
@@ -91,7 +91,6 @@ namespace InstalleurSuiviAtelier
 
             foreach (DictionaryEntry entry in resourceSet)
             {
-
                 //REMPLISSAGE DE LA DT  ICI MEME
 
 

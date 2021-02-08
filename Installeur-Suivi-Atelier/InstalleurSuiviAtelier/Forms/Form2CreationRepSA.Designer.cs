@@ -38,14 +38,15 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.buttonAnnuler = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // textBoxEmplacement
             // 
-            this.textBoxEmplacement.Location = new System.Drawing.Point(68, 195);
+            this.textBoxEmplacement.Location = new System.Drawing.Point(164, 174);
             this.textBoxEmplacement.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxEmplacement.Name = "textBoxEmplacement";
-            this.textBoxEmplacement.Size = new System.Drawing.Size(285, 20);
+            this.textBoxEmplacement.Size = new System.Drawing.Size(284, 20);
             this.textBoxEmplacement.TabIndex = 0;
             this.textBoxEmplacement.Text = "C:\\4CAD\\SuiviAtelier\\Solution_X3Vxx";
             this.textBoxEmplacement.Enter += new System.EventHandler(this.TextBoxEmplacement_Enter);
@@ -54,7 +55,7 @@
             // 
             this.labelEmplacement.AutoSize = true;
             this.labelEmplacement.Font = new System.Drawing.Font("Microsoft JhengHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEmplacement.Location = new System.Drawing.Point(66, 170);
+            this.labelEmplacement.Location = new System.Drawing.Point(162, 149);
             this.labelEmplacement.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelEmplacement.Name = "labelEmplacement";
             this.labelEmplacement.Size = new System.Drawing.Size(83, 15);
@@ -64,10 +65,10 @@
             // buttonParcourir
             // 
             this.buttonParcourir.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonParcourir.Location = new System.Drawing.Point(357, 192);
+            this.buttonParcourir.Location = new System.Drawing.Point(373, 198);
             this.buttonParcourir.Margin = new System.Windows.Forms.Padding(2);
             this.buttonParcourir.Name = "buttonParcourir";
-            this.buttonParcourir.Size = new System.Drawing.Size(64, 25);
+            this.buttonParcourir.Size = new System.Drawing.Size(75, 23);
             this.buttonParcourir.TabIndex = 4;
             this.buttonParcourir.Text = "Parcourir";
             this.buttonParcourir.UseVisualStyleBackColor = true;
@@ -77,7 +78,7 @@
             // 
             this.labelInfoEtape.AutoSize = true;
             this.labelInfoEtape.Font = new System.Drawing.Font("Microsoft JhengHei UI", 19.8F, System.Drawing.FontStyle.Bold);
-            this.labelInfoEtape.Location = new System.Drawing.Point(5, 7);
+            this.labelInfoEtape.Location = new System.Drawing.Point(156, 8);
             this.labelInfoEtape.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelInfoEtape.Name = "labelInfoEtape";
             this.labelInfoEtape.Size = new System.Drawing.Size(309, 70);
@@ -88,12 +89,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft JhengHei UI Light", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 76);
+            this.label1.Location = new System.Drawing.Point(160, 77);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(350, 19);
+            this.label1.Size = new System.Drawing.Size(288, 19);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Ce répertoire sera la racine des fichiers d\'installation";
+            this.label1.Text = "Ce répertoire sera la racine de l\'installation";
             // 
             // button3
             // 
@@ -125,11 +126,20 @@
             this.buttonAnnuler.UseVisualStyleBackColor = true;
             this.buttonAnnuler.Click += new System.EventHandler(this.buttonAnnuler_Click);
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(-2, -2);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(141, 367);
+            this.richTextBox1.TabIndex = 22;
+            this.richTextBox1.Text = "";
+            // 
             // Form2CreationRepSA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(489, 358);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonAnnuler);
@@ -161,5 +171,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button buttonAnnuler;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

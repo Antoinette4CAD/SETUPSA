@@ -115,5 +115,10 @@ namespace InstalleurSuiviAtelier.Forms
             Form2CreationRepSA f2 = new Form2CreationRepSA();
             f2.Show();
         }
+
+        private void buttonAnnuler_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

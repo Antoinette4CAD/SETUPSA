@@ -28,13 +28,6 @@ namespace InstalleurSuiviAtelier.Forms
 
         }
 
-        private void textBoxEmplacement_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
@@ -79,7 +72,7 @@ namespace InstalleurSuiviAtelier.Forms
                     }
                     catch
                     {
-
+                        //Le service tomcat le gèrera la suppression
                     }
 
 
@@ -111,14 +104,6 @@ namespace InstalleurSuiviAtelier.Forms
 
                     //mettre archivweb
                     //Dans le rep Source AVEC LE NUM DE VERSION
-
-                    //if (!Directory.Exists(Path.Combine(tomcatPath, @"..\Sources")))
-                    //{
-                    //    Trace.WriteLine(Directory.Exists(Path.Combine(tomcatPath, @"..\Sources")));
-                    //    Directory.CreateDirectory(Path.Combine(tomcatPath, @"..\Sources")); //attention si on a deja fait une maj ?
-                    //}
-
-
                     if (!Directory.Exists(Path.Combine(tomcatPath, @"..\Sources")))
                     {
                         Directory.CreateDirectory(Path.Combine(tomcatPath, @"..\Sources"));
@@ -159,8 +144,6 @@ namespace InstalleurSuiviAtelier.Forms
                 //répertoire d'install tomcat introuvable
                 throw new Exception("ERREUR - Le répertoire d'installation renseigné n'a pas été trouvé.");
             }
-            //Mettre le .war qu'on a en le renommant
-            //InstallWebApp();
 
             labelError.Text = "MISE A JOUR TERMINEE";
             labelError.ForeColor = System.Drawing.Color.Green;
@@ -173,6 +156,7 @@ namespace InstalleurSuiviAtelier.Forms
         private String AskServiceName()
         {
             PopUpSvcName dialogBox = new PopUpSvcName();
+            dialogBox.StartPosition = FormStartPosition.CenterParent;
             String svcName;
 
             // Show testDialog as a modal dialog and determine if DialogResult = OK.

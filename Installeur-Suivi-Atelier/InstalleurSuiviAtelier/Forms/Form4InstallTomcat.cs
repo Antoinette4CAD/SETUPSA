@@ -32,6 +32,10 @@ namespace InstalleurSuiviAtelier.Forms
             labelZulu.Text = InstallInfos.zuluPath;
 
             InstallInfos.tomcatBinPath = Path.Combine(labelRepInstall.Text, "bin");
+
+
+            //Tooltip
+            toolTipTrouverPort.SetToolTip(this.buttonTrouver, "Trouvez un numéro de port qui n'est pas actuellement ouvert sur votre machine.");
         }
 
         private void CreateAndLaunchTomcatExe()
@@ -49,7 +53,8 @@ namespace InstalleurSuiviAtelier.Forms
             }
             catch (Exception)
             {
-                labelError.Text = "Erreur lors de l'ouverture de l'installeur TOMCAT.";
+                labelError.Text = "Erreur lors de l'ouverture de l'installeur TOMCAT. Relancez l'installeur en mode administrateur, si l'erreur persiste, installez Tomcat à côté et passez cette étape.";
+                label2.Visible = false;
             }
         }
 
@@ -77,12 +82,12 @@ namespace InstalleurSuiviAtelier.Forms
 
             if (!TcpPortIsOpen(8080))
             {
-                labelInfoPort.Text = "Le port 8080 n'est pas actuellement utilisé sur votre machine.";
+                labelInfoPort.Text = "Le port 8080 n'est pas actuellement ouvert sur votre machine.";
                 labelInfoPort.ForeColor = Color.Green;
             }
             else
             {
-                labelInfoPort.Text = "Attention, le port 8080 est utilisé sur votre machine.";
+                labelInfoPort.Text = "Attention, le port 8080 est ouvert et actuellement utilisé sur votre machine.";
                 labelInfoPort.ForeColor = Color.Red;
             }
 
@@ -116,6 +121,13 @@ namespace InstalleurSuiviAtelier.Forms
             f5.Show();
 
             this.Hide();
+        }
+
+        private void buttonPrecedent_Click(object sender, EventArgs e)
+        {
+            Form3JavaPathAndOpenJDK f3 = new Form3JavaPathAndOpenJDK();
+            this.Hide();
+            f3.Show();
         }
     }
 }

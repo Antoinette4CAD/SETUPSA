@@ -17,39 +17,51 @@ namespace InstalleurSuiviAtelier
 
         public static byte[] getVersionInstall()
         {
+            String appWebRessource = InstallInfos.TrouvverNomRessource(versionInstall);
             //Properties.Resources.
-            switch (versionInstall)
-            {
-                case "5.0.6":
-                    return Properties.Resources.SuiviAtelier_5_0_6_pro;
-                case "5.0.7":
-                    return Properties.Resources.SuiviAtelier_5_0_7_pro;
-                case "5.0.9":
-                    return Properties.Resources.SuiviAtelier_5_0_9_pro;
-                case "5.1.1":
-                    return Properties.Resources.SuiviAtelier_5_1_1_pro;
-                case "5.1.3":
-                    return Properties.Resources.SuiviAtelier_5_1_3_pro;
-                case "5.1.5":
-                    return Properties.Resources.SuiviAtelier_5_1_5_pro;
-                case "5.2.0":
-                    return Properties.Resources.SuiviAtelier_5_2_0_pro;
-                case "5.2.1":
-                    return Properties.Resources.SuiviAtelier_5_2_1_pro;
-                case "5.2.2":
-                    return Properties.Resources.SuiviAtelier_5_2_2_pro;
-                case "5.2.3":
-                    return Properties.Resources.SuiviAtelier_5_2_3_pro;
-                case "5.2.4":
-                    return Properties.Resources.SuiviAtelier_5_2_4_pro;
-                case "5.2.7":
-                    return Properties.Resources.SuiviAtelier_5_2_7_pro;
-                case "5.2.8":
-                    return Properties.Resources.SuiviAtelier_5_2_8_pro;
-                default:
-                    throw new Exception("Erreur. Une version du SA n'est sûrement pas renseignée dans InstallInfos.");
-            }
+            return (byte[])Properties.Resources.ResourceManager.GetObject(appWebRessource);
+
+            //switch (versionInstall)
+            //{
+            //    case "5.0.6":
+            //        return Properties.Resources.SuiviAtelier_5_0_6_pro;
+            //    case "5.0.7":
+            //        return Properties.Resources.SuiviAtelier_5_0_7_pro;
+            //    case "5.0.9":
+            //        return Properties.Resources.SuiviAtelier_5_0_9_pro;
+            //    case "5.1.1":
+            //        return Properties.Resources.SuiviAtelier_5_1_1_pro;
+            //    case "5.1.3":
+            //        return Properties.Resources.SuiviAtelier_5_1_3_pro;
+            //    case "5.1.5":
+            //        return Properties.Resources.SuiviAtelier_5_1_5_pro;
+            //    case "5.2.0":
+            //        return Properties.Resources.SuiviAtelier_5_2_0_pro;
+            //    case "5.2.1":
+            //        return Properties.Resources.SuiviAtelier_5_2_1_pro;
+            //    case "5.2.2":
+            //        return Properties.Resources.SuiviAtelier_5_2_2_pro;
+            //    case "5.2.3":
+            //        return Properties.Resources.SuiviAtelier_5_2_3_pro;
+            //    case "5.2.4":
+            //        return Properties.Resources.SuiviAtelier_5_2_4_pro;
+            //    case "5.2.7":
+            //        return Properties.Resources.SuiviAtelier_5_2_7_pro;
+            //    case "5.2.8":
+            //        return (byte[])Properties.Resources.ResourceManager.GetObject("SuiviAtelier_dqdsqd5_2_8_pro");
+            //        return Properties.Resources.SuiviAtelier_5_2_8_pro;
+            //    default:
+            //        throw new Exception("Erreur. Une version du SA n'est sûrement pas renseignée dans InstallInfos.");
+            //}
         }
+
+        private static String TrouvverNomRessource(String version)
+        {
+            String val = "";
+            val = "SuiviAtelier_" + version.Replace(".", "_") + "_pro";          
+            return val;
+        }
+
 
         public static void InstallWebApp(String pathInstall, bool avecVersion)
         {

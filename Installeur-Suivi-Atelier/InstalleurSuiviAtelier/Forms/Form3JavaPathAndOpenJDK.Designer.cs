@@ -39,12 +39,13 @@
             this.buttonPrecedent = new System.Windows.Forms.Button();
             this.buttonSuivant = new System.Windows.Forms.Button();
             this.buttonAnnuler = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // buttonParcourir
             // 
             this.buttonParcourir.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonParcourir.Location = new System.Drawing.Point(326, 174);
+            this.buttonParcourir.Location = new System.Drawing.Point(378, 174);
             this.buttonParcourir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonParcourir.Name = "buttonParcourir";
             this.buttonParcourir.Size = new System.Drawing.Size(64, 25);
@@ -56,7 +57,7 @@
             // 
             this.labelJAVA_HOME.AutoSize = true;
             this.labelJAVA_HOME.Font = new System.Drawing.Font("Microsoft JhengHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelJAVA_HOME.Location = new System.Drawing.Point(100, 155);
+            this.labelJAVA_HOME.Location = new System.Drawing.Point(152, 155);
             this.labelJAVA_HOME.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelJAVA_HOME.Name = "labelJAVA_HOME";
             this.labelJAVA_HOME.Size = new System.Drawing.Size(145, 15);
@@ -65,7 +66,7 @@
             // 
             // textBoxJAVA_HOME
             // 
-            this.textBoxJAVA_HOME.Location = new System.Drawing.Point(102, 177);
+            this.textBoxJAVA_HOME.Location = new System.Drawing.Point(154, 177);
             this.textBoxJAVA_HOME.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxJAVA_HOME.Name = "textBoxJAVA_HOME";
             this.textBoxJAVA_HOME.Size = new System.Drawing.Size(220, 20);
@@ -74,17 +75,17 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(80, 149);
+            this.label1.Location = new System.Drawing.Point(151, 147);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(323, 63);
+            this.label1.Size = new System.Drawing.Size(318, 63);
             this.label1.TabIndex = 9;
             // 
             // labelInfoEtape
             // 
             this.labelInfoEtape.AutoSize = true;
             this.labelInfoEtape.Font = new System.Drawing.Font("Microsoft JhengHei UI", 19.8F, System.Drawing.FontStyle.Bold);
-            this.labelInfoEtape.Location = new System.Drawing.Point(9, 7);
+            this.labelInfoEtape.Location = new System.Drawing.Point(148, 9);
             this.labelInfoEtape.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelInfoEtape.Name = "labelInfoEtape";
             this.labelInfoEtape.Size = new System.Drawing.Size(321, 35);
@@ -95,7 +96,7 @@
             // 
             this.buttonSkip.Enabled = false;
             this.buttonSkip.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSkip.Location = new System.Drawing.Point(196, 214);
+            this.buttonSkip.Location = new System.Drawing.Point(248, 214);
             this.buttonSkip.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonSkip.Name = "buttonSkip";
             this.buttonSkip.Size = new System.Drawing.Size(75, 23);
@@ -108,7 +109,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft JhengHei UI Light", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 42);
+            this.label2.Location = new System.Drawing.Point(151, 44);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(303, 38);
@@ -143,12 +144,22 @@
             this.buttonAnnuler.TabIndex = 18;
             this.buttonAnnuler.Text = "Annuler";
             this.buttonAnnuler.UseVisualStyleBackColor = true;
+            this.buttonAnnuler.Click += new System.EventHandler(this.buttonAnnuler_Click);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(-6, -5);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(141, 367);
+            this.richTextBox1.TabIndex = 21;
+            this.richTextBox1.Text = "";
             // 
             // Form3JavaPathAndOpenJDK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(489, 358);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.buttonPrecedent);
             this.Controls.Add(this.buttonSuivant);
             this.Controls.Add(this.buttonAnnuler);
@@ -183,5 +194,6 @@
         private System.Windows.Forms.Button buttonPrecedent;
         private System.Windows.Forms.Button buttonSuivant;
         private System.Windows.Forms.Button buttonAnnuler;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
