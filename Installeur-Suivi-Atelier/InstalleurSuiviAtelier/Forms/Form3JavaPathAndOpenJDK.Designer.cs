@@ -39,14 +39,15 @@
             this.buttonPrecedent = new System.Windows.Forms.Button();
             this.buttonSuivant = new System.Windows.Forms.Button();
             this.buttonAnnuler = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonParcourir
             // 
             this.buttonParcourir.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonParcourir.Location = new System.Drawing.Point(378, 174);
-            this.buttonParcourir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonParcourir.Margin = new System.Windows.Forms.Padding(2);
             this.buttonParcourir.Name = "buttonParcourir";
             this.buttonParcourir.Size = new System.Drawing.Size(64, 25);
             this.buttonParcourir.TabIndex = 7;
@@ -67,7 +68,7 @@
             // textBoxJAVA_HOME
             // 
             this.textBoxJAVA_HOME.Location = new System.Drawing.Point(154, 177);
-            this.textBoxJAVA_HOME.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxJAVA_HOME.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxJAVA_HOME.Name = "textBoxJAVA_HOME";
             this.textBoxJAVA_HOME.Size = new System.Drawing.Size(220, 20);
             this.textBoxJAVA_HOME.TabIndex = 5;
@@ -97,7 +98,7 @@
             this.buttonSkip.Enabled = false;
             this.buttonSkip.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSkip.Location = new System.Drawing.Point(248, 214);
-            this.buttonSkip.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSkip.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSkip.Name = "buttonSkip";
             this.buttonSkip.Size = new System.Drawing.Size(75, 23);
             this.buttonSkip.TabIndex = 13;
@@ -146,20 +147,22 @@
             this.buttonAnnuler.UseVisualStyleBackColor = true;
             this.buttonAnnuler.Click += new System.EventHandler(this.buttonAnnuler_Click);
             // 
-            // richTextBox1
+            // pictureBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(-6, -5);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(141, 367);
-            this.richTextBox1.TabIndex = 21;
-            this.richTextBox1.Text = "";
+            this.pictureBox1.BackgroundImage = global::InstalleurSuiviAtelier.Properties.Resources._4CAD_Group_Logo;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(5, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(144, 338);
+            this.pictureBox1.TabIndex = 24;
+            this.pictureBox1.TabStop = false;
             // 
             // Form3JavaPathAndOpenJDK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(489, 358);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonPrecedent);
             this.Controls.Add(this.buttonSuivant);
             this.Controls.Add(this.buttonAnnuler);
@@ -171,12 +174,13 @@
             this.Controls.Add(this.textBoxJAVA_HOME);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(505, 397);
             this.MinimumSize = new System.Drawing.Size(505, 397);
             this.Name = "Form3JavaPathAndOpenJDK";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "4CAD - Installeur suivi atelier";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,6 +198,6 @@
         private System.Windows.Forms.Button buttonPrecedent;
         private System.Windows.Forms.Button buttonSuivant;
         private System.Windows.Forms.Button buttonAnnuler;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

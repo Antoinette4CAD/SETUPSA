@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PopUpSvcName));
             this.textBoxSvc = new System.Windows.Forms.TextBox();
             this.buttonOK = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -36,16 +37,18 @@
             // textBoxSvc
             // 
             this.textBoxSvc.AccessibleDescription = "public";
-            this.textBoxSvc.Location = new System.Drawing.Point(58, 126);
+            this.textBoxSvc.Location = new System.Drawing.Point(44, 102);
+            this.textBoxSvc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxSvc.Name = "textBoxSvc";
-            this.textBoxSvc.Size = new System.Drawing.Size(277, 22);
+            this.textBoxSvc.Size = new System.Drawing.Size(209, 20);
             this.textBoxSvc.TabIndex = 0;
             // 
             // buttonOK
             // 
-            this.buttonOK.Location = new System.Drawing.Point(145, 189);
+            this.buttonOK.Location = new System.Drawing.Point(109, 154);
+            this.buttonOK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(111, 31);
+            this.buttonOK.Size = new System.Drawing.Size(83, 25);
             this.buttonOK.TabIndex = 1;
             this.buttonOK.Text = "Ok";
             this.buttonOK.UseVisualStyleBackColor = true;
@@ -54,9 +57,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 63);
+            this.label1.Location = new System.Drawing.Point(31, 51);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(309, 34);
+            this.label1.Size = new System.Drawing.Size(230, 26);
             this.label1.TabIndex = 2;
             this.label1.Text = "Veuillez entrer le nom du service Tomcat utilisé \r\npour cette  installation du su" +
     "ivi atelier";
@@ -64,14 +68,16 @@
             // 
             // PopUpSvcName
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(393, 256);
+            this.ClientSize = new System.Drawing.Size(295, 208);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonOK);
             this.Controls.Add(this.textBoxSvc);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "PopUpSvcName";
-            this.Text = "PopUpSvcName";
+            this.Text = "Service tomcat";
             this.ResumeLayout(false);
             this.PerformLayout();
 

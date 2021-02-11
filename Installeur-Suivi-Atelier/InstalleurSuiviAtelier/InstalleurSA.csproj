@@ -243,6 +243,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Properties\Resources\images\4CAD Group_Logo.png" />
     <Content Include="Properties\Resources\images\Clé et marteau - Orange.ico" />
     <Content Include="Properties\Resources\images\imgonline-com-ua-Transparent-background-bfJONMFhAyQr.ico" />
     <Content Include="Properties\Resources\apache-tomcat-8.5.47.exe" />

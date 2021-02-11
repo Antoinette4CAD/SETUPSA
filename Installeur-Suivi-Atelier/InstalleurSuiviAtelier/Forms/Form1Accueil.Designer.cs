@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1Accueil));
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.buttonAnnuler = new System.Windows.Forms.Button();
             this.buttonSuivant = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -39,23 +38,17 @@
             this.cbVersions = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // richTextBox2
-            // 
-            this.richTextBox2.Location = new System.Drawing.Point(-134, 316);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(484, 44);
-            this.richTextBox2.TabIndex = 9;
-            this.richTextBox2.Text = "";
             // 
             // buttonAnnuler
             // 
             this.buttonAnnuler.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F);
-            this.buttonAnnuler.Location = new System.Drawing.Point(266, 326);
+            this.buttonAnnuler.Location = new System.Drawing.Point(266, 334);
             this.buttonAnnuler.Name = "buttonAnnuler";
             this.buttonAnnuler.Size = new System.Drawing.Size(71, 23);
             this.buttonAnnuler.TabIndex = 10;
@@ -66,7 +59,7 @@
             // buttonSuivant
             // 
             this.buttonSuivant.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F);
-            this.buttonSuivant.Location = new System.Drawing.Point(183, 326);
+            this.buttonSuivant.Location = new System.Drawing.Point(183, 334);
             this.buttonSuivant.Name = "buttonSuivant";
             this.buttonSuivant.Size = new System.Drawing.Size(71, 23);
             this.buttonSuivant.TabIndex = 11;
@@ -84,7 +77,7 @@
             this.groupBox1.Controls.Add(this.cbVersions);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.richTextBox2);
+            this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Location = new System.Drawing.Point(138, -9);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(352, 367);
@@ -157,12 +150,23 @@
             this.label1.Text = "Bienvenue dans l\'installeur 4CAD";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBox2.Location = new System.Drawing.Point(-133, 323);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(485, 43);
+            this.pictureBox2.TabIndex = 20;
+            this.pictureBox2.TabStop = false;
+            // 
             // pictureBox1
             // 
-            this.pictureBox1.InitialImage = global::InstalleurSuiviAtelier.Properties.Resources.check;
-            this.pictureBox1.Location = new System.Drawing.Point(4, 1);
+            this.pictureBox1.BackgroundImage = global::InstalleurSuiviAtelier.Properties.Resources._4CAD_Group_Logo;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.InitialImage = global::InstalleurSuiviAtelier.Properties.Resources._4CAD_Group_Logo;
+            this.pictureBox1.Location = new System.Drawing.Point(14, -1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(138, 351);
+            this.pictureBox1.Size = new System.Drawing.Size(138, 358);
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
@@ -183,13 +187,13 @@
             this.Text = "4CAD - Installeur suivi atelier";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.Button buttonAnnuler;
         private System.Windows.Forms.Button buttonSuivant;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -200,6 +204,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

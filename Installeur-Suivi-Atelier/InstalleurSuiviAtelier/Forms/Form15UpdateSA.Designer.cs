@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form15UpdateSA));
             this.label1 = new System.Windows.Forms.Label();
             this.labelInfoEtape = new System.Windows.Forms.Label();
             this.buttonParcourir = new System.Windows.Forms.Button();
@@ -66,7 +67,7 @@
             // 
             this.buttonParcourir.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonParcourir.Location = new System.Drawing.Point(358, 169);
-            this.buttonParcourir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonParcourir.Margin = new System.Windows.Forms.Padding(2);
             this.buttonParcourir.Name = "buttonParcourir";
             this.buttonParcourir.Size = new System.Drawing.Size(64, 25);
             this.buttonParcourir.TabIndex = 10;
@@ -88,7 +89,7 @@
             // textBoxEmplacement
             // 
             this.textBoxEmplacement.Location = new System.Drawing.Point(69, 172);
-            this.textBoxEmplacement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxEmplacement.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxEmplacement.Name = "textBoxEmplacement";
             this.textBoxEmplacement.Size = new System.Drawing.Size(285, 20);
             this.textBoxEmplacement.TabIndex = 8;
@@ -148,12 +149,13 @@
             this.Controls.Add(this.buttonParcourir);
             this.Controls.Add(this.labelEmplacement);
             this.Controls.Add(this.textBoxEmplacement);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(505, 397);
             this.MinimumSize = new System.Drawing.Size(505, 397);
             this.Name = "Form15UpdateSA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form15UpdateSA";
+            this.Text = "4CAD - Installeur suivi atelier";
             this.Load += new System.EventHandler(this.Form15UpdateSA_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
