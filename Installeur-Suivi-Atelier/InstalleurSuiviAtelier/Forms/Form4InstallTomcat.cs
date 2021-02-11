@@ -33,6 +33,7 @@ namespace InstalleurSuiviAtelier.Forms
 
             InstallInfos.tomcatBinPath = Path.Combine(labelRepInstall.Text, "bin");
 
+            buttonSuivant.Enabled = false;
 
             //Tooltip
             toolTipTrouverPort.SetToolTip(this.buttonTrouver, "Trouvez un numéro de port qui n'est pas actuellement ouvert sur votre machine.");
@@ -78,7 +79,10 @@ namespace InstalleurSuiviAtelier.Forms
 
         private void ButtonStart_Click(object sender, EventArgs e)
         {
+
             CreateAndLaunchTomcatExe();
+
+            buttonSuivant.Enabled = true;
 
             if (!TcpPortIsOpen(8080))
             {

@@ -35,7 +35,7 @@ namespace InstalleurSuiviAtelier.Forms
                 labelError.ForeColor = Color.Green;
             }
 
-            buttonNext.Enabled = true;
+            buttonSuivant.Enabled = true;
 
             string filePath = InstallInfos.repPrincipal + @"\SA_config.groovy";
             string fileTempPath = Path.GetTempPath() + @"SA_config.groovy";
@@ -127,6 +127,18 @@ namespace InstalleurSuiviAtelier.Forms
                 labelError.ForeColor = Color.Green;
                 throw;
             }
+        }
+
+        private void buttonPrecedent_Click(object sender, EventArgs e)
+        {
+            Form5TomcatService f5 = new Form5TomcatService();
+            this.Hide();
+            f5.Show();
+        }
+
+        private void buttonAnnuler_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

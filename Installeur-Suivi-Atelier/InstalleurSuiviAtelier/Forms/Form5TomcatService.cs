@@ -18,7 +18,7 @@ namespace InstalleurSuiviAtelier.Forms
         {
             InitializeComponent();
             InitTabImage();
-            labelInfo.Text = "";
+            labelInfo.Text = InstallInfos.getSvcName() + "_" + InstallInfos.versionInstall;
             this.labelCompteur.Text = "1/4";
             labelOnglet.Text = "";
         }
@@ -37,7 +37,7 @@ namespace InstalleurSuiviAtelier.Forms
         private void ButtonStart_Click(object sender, EventArgs e)
         {
             Process.Start(InstallInfos.tomcatBinPath + @"\" + GetExecutableName());
-
+            //buttonSuivant.Enabled = true;
         }
 
         //pour récupérer le nom de l'exécutable tomcat8w.exe (car il peut changer en fonction des paramètres de l'user)
@@ -65,7 +65,7 @@ namespace InstalleurSuiviAtelier.Forms
                 if(IndiceTab == 3)
                 {
                     pictureGuide.SizeMode = PictureBoxSizeMode.CenterImage;
-                    buttonNext.Enabled = true;
+                    buttonSuivant.Enabled = true;
                 }
 
             }
@@ -122,18 +122,18 @@ namespace InstalleurSuiviAtelier.Forms
             switch (IndiceTab)
             {
                 case 0:
-                    labelInfo.Text = "4CAD_SA_X.X.X_SolutionX3xxx";
+                    labelInfo.Text = InstallInfos.getSvcName() + "_" + InstallInfos.versionInstall;
                     break;
                 case 1:
                     labelInfo.Text = "Utilisez le compte de services windows";
                     break;
                 case 2:
-                    labelInfo.Text = @"-Dfile.encoding = UTF - 8
+                    labelInfo.Text = "Lignes à ajouter en fin de bloc : \n\n" + @"-Dfile.encoding = UTF - 8
 -DSuiviAtelier.config.location = " + InstallInfos.repPrincipal + @"\SuiviAtelier_config.groovy";
                     labelInfo.ForeColor = Color.Black;
                     break;
                 default:
-                    labelInfo.Text = "Configuration terminée !";
+                    labelInfo.Text = "Configuration terminée !\nVous pouvez fermer le configurateur Tomcat et passer à l'étape suivante de l'installation.";
                     labelInfo.ForeColor = Color.Green;
                     break;
             }
@@ -159,6 +159,18 @@ namespace InstalleurSuiviAtelier.Forms
 
             Form6ConfigGroovy f6 = new Form6ConfigGroovy();
             f6.Show();
+        }
+
+        private void buttonAnnuler_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void buttonPrecedent_Click(object sender, EventArgs e)
+        {
+            Form4InstallTomcat f4 = new Form4InstallTomcat();
+            this.Hide();
+            f4.Show();
         }
     }
 }
