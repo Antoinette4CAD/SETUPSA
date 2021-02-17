@@ -172,6 +172,9 @@
   <data name="SuiviAtelier_5_2_8_pro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>resources\webapps\suiviatelier-5.2.8-pro.war;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="SuiviAtelier_5_2_9_pro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\webapps\suiviatelier-5.2.9-pro.war;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="tomcatInstal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>resources\apache-tomcat-8.5.47.exe;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>

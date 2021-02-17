@@ -37,8 +37,8 @@ namespace InstalleurSuiviAtelier.Forms
 
             buttonSuivant.Enabled = true;
 
-            string filePath = InstallInfos.repPrincipal + @"\SA_config.groovy";
-            string fileTempPath = Path.GetTempPath() + @"SA_config.groovy";
+            string filePath = InstallInfos.repPrincipal + @"\SuiviAtelier_config.groovy";
+            string fileTempPath = Path.GetTempPath() + @"SuiviAtelier_config.groovy";
 
             string content = GenerateConfigContent();
 

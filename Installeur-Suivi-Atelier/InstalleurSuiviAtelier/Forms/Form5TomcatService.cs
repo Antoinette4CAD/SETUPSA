@@ -128,8 +128,8 @@ namespace InstalleurSuiviAtelier.Forms
                     labelInfo.Text = "Utilisez le compte de services windows";
                     break;
                 case 2:
-                    labelInfo.Text = "Lignes à ajouter en fin de bloc : \n\n" + @"-Dfile.encoding = UTF - 8
--DSuiviAtelier.config.location = " + InstallInfos.repPrincipal + @"\SuiviAtelier_config.groovy";
+                    labelInfo.Text = "Lignes à ajouter en fin de bloc : \n\n" + @"-Dfile.encoding=UTF-8
+-DSuiviAtelier.config.location=" + InstallInfos.repPrincipal + @"\SuiviAtelier_config.groovy";
                     labelInfo.ForeColor = Color.Black;
                     break;
                 default:

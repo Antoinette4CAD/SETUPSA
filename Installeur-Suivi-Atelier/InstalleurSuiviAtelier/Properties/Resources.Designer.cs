@@ -253,6 +253,16 @@ namespace InstalleurSuiviAtelier.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
+        internal static byte[] SuiviAtelier_5_2_9_pro {
+            get {
+                object obj = ResourceManager.GetObject("SuiviAtelier_5_2_9_pro", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Byte[].
+        /// </summary>
         internal static byte[] tomcatInstal {
             get {
                 object obj = ResourceManager.GetObject("tomcatInstal", resourceCulture);

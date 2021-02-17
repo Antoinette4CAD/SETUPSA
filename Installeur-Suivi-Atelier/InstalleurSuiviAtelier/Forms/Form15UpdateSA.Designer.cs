@@ -39,13 +39,15 @@
             this.buttonAnnuler = new System.Windows.Forms.Button();
             this.buttonSuivant = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft JhengHei UI Light", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 41);
+            this.label1.Location = new System.Drawing.Point(146, 41);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(282, 19);
@@ -56,18 +58,18 @@
             // 
             this.labelInfoEtape.AutoSize = true;
             this.labelInfoEtape.Font = new System.Drawing.Font("Microsoft JhengHei UI", 19.8F, System.Drawing.FontStyle.Bold);
-            this.labelInfoEtape.Location = new System.Drawing.Point(9, 7);
+            this.labelInfoEtape.Location = new System.Drawing.Point(143, 7);
             this.labelInfoEtape.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelInfoEtape.Name = "labelInfoEtape";
-            this.labelInfoEtape.Size = new System.Drawing.Size(360, 35);
+            this.labelInfoEtape.Size = new System.Drawing.Size(159, 35);
             this.labelInfoEtape.TabIndex = 11;
-            this.labelInfoEtape.Text = "Mise à jour du Suivi Atelier";
+            this.labelInfoEtape.Text = "Mise à jour";
             // 
             // buttonParcourir
             // 
             this.buttonParcourir.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonParcourir.Location = new System.Drawing.Point(358, 169);
-            this.buttonParcourir.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonParcourir.Location = new System.Drawing.Point(402, 169);
+            this.buttonParcourir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonParcourir.Name = "buttonParcourir";
             this.buttonParcourir.Size = new System.Drawing.Size(64, 25);
             this.buttonParcourir.TabIndex = 10;
@@ -79,7 +81,7 @@
             // 
             this.labelEmplacement.AutoSize = true;
             this.labelEmplacement.Font = new System.Drawing.Font("Microsoft JhengHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEmplacement.Location = new System.Drawing.Point(67, 149);
+            this.labelEmplacement.Location = new System.Drawing.Point(146, 149);
             this.labelEmplacement.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelEmplacement.Name = "labelEmplacement";
             this.labelEmplacement.Size = new System.Drawing.Size(204, 15);
@@ -88,10 +90,10 @@
             // 
             // textBoxEmplacement
             // 
-            this.textBoxEmplacement.Location = new System.Drawing.Point(69, 172);
-            this.textBoxEmplacement.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxEmplacement.Location = new System.Drawing.Point(148, 172);
+            this.textBoxEmplacement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxEmplacement.Name = "textBoxEmplacement";
-            this.textBoxEmplacement.Size = new System.Drawing.Size(285, 20);
+            this.textBoxEmplacement.Size = new System.Drawing.Size(251, 20);
             this.textBoxEmplacement.TabIndex = 8;
             this.textBoxEmplacement.Text = "C:\\4CAD\\SuiviAtelier\\Solution_X3Vxx\\Tomcat-8.5";
             // 
@@ -99,7 +101,7 @@
             // 
             this.labelError.AutoSize = true;
             this.labelError.ForeColor = System.Drawing.Color.Red;
-            this.labelError.Location = new System.Drawing.Point(136, 217);
+            this.labelError.Location = new System.Drawing.Point(119, 217);
             this.labelError.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelError.Name = "labelError";
             this.labelError.Size = new System.Drawing.Size(0, 13);
@@ -135,11 +137,23 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::InstalleurSuiviAtelier.Properties.Resources._4CAD_Group_Logo;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.InitialImage = global::InstalleurSuiviAtelier.Properties.Resources._4CAD_Group_Logo;
+            this.pictureBox1.Location = new System.Drawing.Point(5, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(136, 347);
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form15UpdateSA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(489, 358);
+            this.ClientSize = new System.Drawing.Size(488, 357);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.buttonSuivant);
             this.Controls.Add(this.buttonAnnuler);
@@ -150,13 +164,14 @@
             this.Controls.Add(this.labelEmplacement);
             this.Controls.Add(this.textBoxEmplacement);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.MaximumSize = new System.Drawing.Size(505, 397);
-            this.MinimumSize = new System.Drawing.Size(505, 397);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximumSize = new System.Drawing.Size(504, 396);
+            this.MinimumSize = new System.Drawing.Size(504, 396);
             this.Name = "Form15UpdateSA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "4CAD - Installeur suivi atelier";
             this.Load += new System.EventHandler(this.Form15UpdateSA_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,5 +189,6 @@
         private System.Windows.Forms.Button buttonAnnuler;
         private System.Windows.Forms.Button buttonSuivant;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

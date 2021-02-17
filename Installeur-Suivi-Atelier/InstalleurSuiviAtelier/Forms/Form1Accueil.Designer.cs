@@ -152,7 +152,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBox2.BackColor = System.Drawing.Color.Gainsboro;
             this.pictureBox2.Location = new System.Drawing.Point(-133, 323);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(485, 43);
@@ -164,9 +164,9 @@
             this.pictureBox1.BackgroundImage = global::InstalleurSuiviAtelier.Properties.Resources._4CAD_Group_Logo;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.InitialImage = global::InstalleurSuiviAtelier.Properties.Resources._4CAD_Group_Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(14, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(4, 6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(138, 358);
+            this.pictureBox1.Size = new System.Drawing.Size(136, 347);
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 

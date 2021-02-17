@@ -1,9 +1,9 @@
 ﻿using Microsoft.Win32;
 using System;
+using System.Drawing;
 using System.IO;
 using System.IO.Compression;
 using System.Windows.Forms;
-using System.Drawing;
 
 namespace InstalleurSuiviAtelier.Forms
 {
@@ -26,7 +26,7 @@ namespace InstalleurSuiviAtelier.Forms
                 label1.Text = "Installez JAVA et redémarrez l'installeur.";
             }
         }
-        
+
 
 
 
@@ -40,7 +40,7 @@ namespace InstalleurSuiviAtelier.Forms
                 {
                     UnzipFile();
 
-                    
+
 
                     this.Hide();
                     Form4InstallTomcat f4 = new Form4InstallTomcat();
@@ -60,7 +60,7 @@ namespace InstalleurSuiviAtelier.Forms
                     buttonParcourir.Hide();
                 }
 
-        }
+            }
             catch (Exception)
             {
                 label1.Text = "Une erreur est survenue lors de l'extraction du JDK_Zulu vers : " + textBoxJAVA_HOME.Text + "\n\nVeillez à lancer l'application en mode administrateur.\nVérifiez que le JDK n'existe pas déjà.\nSi c'est le cas, supprimez le JDK et relancez l'installation (ou passez cette étape).";
@@ -68,7 +68,7 @@ namespace InstalleurSuiviAtelier.Forms
             }
 
 
-}
+        }
 
 
         private void UnzipFile()
@@ -89,7 +89,7 @@ namespace InstalleurSuiviAtelier.Forms
                 throw e;
             }
         }
-      
+
 
         private String GetJavaInstallationPath()
         {
@@ -119,6 +119,15 @@ namespace InstalleurSuiviAtelier.Forms
         private void buttonAnnuler_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void buttonParcourir_Click(object sender, EventArgs e)
+        {
+            DialogResult result = folderBrowserDialog.ShowDialog();
+
+            //Si le folder choisi n'est pas rien, on change ce qu'il y a écrit dans la textBox
+            if (result == DialogResult.OK)
+                textBoxJAVA_HOME.Text = folderBrowserDialog.SelectedPath;
         }
     }
 }
