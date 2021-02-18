@@ -20,10 +20,17 @@ namespace InstalleurSuiviAtelier.Forms
             }
             catch (Exception)
             {
-                //TODO : Créer un rep ProgamFiles\Java et installer le Zulu dedans, proposer avec un bouton
-                textBoxJAVA_HOME.Text = "JAVA n'est pas installé sur votre machine.";
-                textBoxJAVA_HOME.ForeColor = Color.Red;
-                label1.Text = "Installez JAVA et redémarrez l'installeur.";
+                //On a pas pu chopper le JavaHome dans les variables d'environnement 
+                if(Directory.Exists(@"C:\Program Files\Java"))
+                {
+                    textBoxJAVA_HOME.Text = @"C:\Program Files\Java";
+                }
+                else
+                {
+                    Directory.CreateDirectory(@"C:\Program Files\Java");
+                    label3.Text = @"Un répertoire Java a été créé à l'emplacement C:\Program Files\Java. Vous pouvez cliquer sur suivant pour installer Zulu dans celui-ci.";
+                    label3.ForeColor = Color.Blue;
+                }
             }
         }
 
@@ -93,6 +100,7 @@ namespace InstalleurSuiviAtelier.Forms
 
         private String GetJavaInstallationPath()
         {
+            throw new NotImplementedException();
             String javaKey = "SOFTWARE\\JavaSoft\\Java Runtime Environment";
             using (var baseKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64).OpenSubKey(javaKey))
             {

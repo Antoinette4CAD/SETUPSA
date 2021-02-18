@@ -17,7 +17,7 @@ namespace InstalleurSuiviAtelier
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form6ConfigGroovy());
+            Application.Run(new Form3JavaPathAndOpenJDK());
             //Application.Run(new Form1Accueil());
         }
     }
