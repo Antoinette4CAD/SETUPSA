@@ -19,6 +19,26 @@ namespace InstalleurSuiviAtelier.Forms
         {
             InitializeComponent();
             labelError.Text = "";
+
+
+            //Génération des tooltips
+            ToolTip t1 = new ToolTip();
+            t1.SetToolTip(labelUser, "Utilisateur X3 ayant accès au pool de web services.");
+
+            ToolTip t2 = new ToolTip();
+            t2.SetToolTip(labelPassword, "Mot de passe de cet utilisateur X3.");
+
+            ToolTip t3 = new ToolTip();
+            t3.SetToolTip(labelDossierX3, "Nom du dossier X3 utilisant le Suivi Atelier.");
+
+            ToolTip t4 = new ToolTip();
+            t4.SetToolTip(labelSrv, "Adresse du serveur sur lequel tourne X3.");
+
+            ToolTip t5 = new ToolTip();
+            t5.SetToolTip(labelPort, "Port utilisé par X3.");
+
+            ToolTip t6 = new ToolTip();
+            t6.SetToolTip(labelProtocole, "Pour l'application Suivi Atelier. Par défaut, laissez HTTP.");
         }
 
         private void ButtonGenerate_Click(object sender, EventArgs e)
@@ -58,7 +78,7 @@ namespace InstalleurSuiviAtelier.Forms
                 labelError.Text = "Impossible de générer " + filePath;
                 labelError.ForeColor = Color.Red;
             }
-            labelError.Text = "Opération terminée avec succès.";
+            labelError.Text = "Opération terminée avec succès.";//\n"+ filePath;
             labelError.ForeColor = Color.Green;
         }
 

@@ -18,7 +18,9 @@ namespace InstalleurSuiviAtelier.Forms
         {
             InitializeComponent();
             InitTabImage();
-            labelInfo.Text = InstallInfos.getSvcName() + "_" + InstallInfos.versionInstall;
+
+            //Triple maj de l'interface, a optimiser en utilisant les méthodes pour ca
+            labelInfo.Text = "- Nom du service Tomcat (copiez/collez dans le configurateur Tomcat) :\n\n" + InstallInfos.getSvcName() + "_" + InstallInfos.versionInstall + "\n\n- Passez le lancement en automatique.";
             this.labelCompteur.Text = "1/4";
             labelOnglet.Text = "";
         }
@@ -122,7 +124,7 @@ namespace InstalleurSuiviAtelier.Forms
             switch (IndiceTab)
             {
                 case 0:
-                    labelInfo.Text = InstallInfos.getSvcName() + "_" + InstallInfos.versionInstall;
+                    labelInfo.Text = "- Nom du service Tomcat (copiez/collez dans le configurateur Tomcat) :\n\n" + InstallInfos.getSvcName() + "_" + InstallInfos.versionInstall + "\n\n- Passez le lancement en automatique.";
                     break;
                 case 1:
                     labelInfo.Text = "Utilisez le compte de services windows";

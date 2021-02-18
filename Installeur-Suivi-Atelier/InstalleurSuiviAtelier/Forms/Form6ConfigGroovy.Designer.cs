@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6ConfigGroovy));
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.labelUser = new System.Windows.Forms.Label();
+            this.labelPassword = new System.Windows.Forms.Label();
+            this.labelDossierX3 = new System.Windows.Forms.Label();
+            this.labelSrv = new System.Windows.Forms.Label();
+            this.labelProtocole = new System.Windows.Forms.Label();
+            this.labelPort = new System.Windows.Forms.Label();
             this.textBoxUser = new System.Windows.Forms.TextBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.textBoxX3Name = new System.Windows.Forms.TextBox();
@@ -61,79 +61,79 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(301, 70);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Intialisation du fichier \r\nde configuration";
+            this.label1.Text = "Intialisation du fichier \r\nde configuration X3";
             // 
-            // label2
+            // labelUser
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(239, 91);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 14);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Utilisateur :";
+            this.labelUser.AutoSize = true;
+            this.labelUser.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUser.Location = new System.Drawing.Point(239, 91);
+            this.labelUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelUser.Name = "labelUser";
+            this.labelUser.Size = new System.Drawing.Size(66, 14);
+            this.labelUser.TabIndex = 1;
+            this.labelUser.Text = "Utilisateur :";
             // 
-            // label3
+            // labelPassword
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(223, 123);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 14);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Mot de passe :";
+            this.labelPassword.AutoSize = true;
+            this.labelPassword.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPassword.Location = new System.Drawing.Point(223, 123);
+            this.labelPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelPassword.Name = "labelPassword";
+            this.labelPassword.Size = new System.Drawing.Size(83, 14);
+            this.labelPassword.TabIndex = 2;
+            this.labelPassword.Text = "Mot de passe :";
             // 
-            // label4
+            // labelDossierX3
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(192, 155);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 14);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Nom du dossier X3 :";
+            this.labelDossierX3.AutoSize = true;
+            this.labelDossierX3.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDossierX3.Location = new System.Drawing.Point(192, 155);
+            this.labelDossierX3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDossierX3.Name = "labelDossierX3";
+            this.labelDossierX3.Size = new System.Drawing.Size(112, 14);
+            this.labelDossierX3.TabIndex = 3;
+            this.labelDossierX3.Text = "Nom du dossier X3 :";
             // 
-            // label5
+            // labelSrv
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(209, 186);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 14);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Adresse serveur :";
+            this.labelSrv.AutoSize = true;
+            this.labelSrv.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSrv.Location = new System.Drawing.Point(209, 186);
+            this.labelSrv.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelSrv.Name = "labelSrv";
+            this.labelSrv.Size = new System.Drawing.Size(95, 14);
+            this.labelSrv.TabIndex = 4;
+            this.labelSrv.Text = "Adresse serveur :";
             // 
-            // label6
+            // labelProtocole
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(241, 218);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 14);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Protocole :";
+            this.labelProtocole.AutoSize = true;
+            this.labelProtocole.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelProtocole.Location = new System.Drawing.Point(241, 250);
+            this.labelProtocole.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelProtocole.Name = "labelProtocole";
+            this.labelProtocole.Size = new System.Drawing.Size(63, 14);
+            this.labelProtocole.TabIndex = 5;
+            this.labelProtocole.Text = "Protocole :";
             // 
-            // label7
+            // labelPort
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(264, 250);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(38, 14);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Port : ";
+            this.labelPort.AutoSize = true;
+            this.labelPort.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPort.Location = new System.Drawing.Point(264, 220);
+            this.labelPort.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelPort.Name = "labelPort";
+            this.labelPort.Size = new System.Drawing.Size(38, 14);
+            this.labelPort.TabIndex = 6;
+            this.labelPort.Text = "Port : ";
             // 
             // textBoxUser
             // 
             this.textBoxUser.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUser.Location = new System.Drawing.Point(303, 88);
-            this.textBoxUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxUser.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxUser.Name = "textBoxUser";
             this.textBoxUser.Size = new System.Drawing.Size(133, 21);
             this.textBoxUser.TabIndex = 8;
@@ -142,7 +142,7 @@
             // 
             this.textBoxPassword.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPassword.Location = new System.Drawing.Point(303, 120);
-            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(133, 21);
             this.textBoxPassword.TabIndex = 9;
@@ -151,7 +151,7 @@
             // 
             this.textBoxX3Name.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxX3Name.Location = new System.Drawing.Point(303, 152);
-            this.textBoxX3Name.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxX3Name.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxX3Name.Name = "textBoxX3Name";
             this.textBoxX3Name.Size = new System.Drawing.Size(133, 21);
             this.textBoxX3Name.TabIndex = 10;
@@ -160,7 +160,7 @@
             // 
             this.textBoxServerAdress.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxServerAdress.Location = new System.Drawing.Point(303, 184);
-            this.textBoxServerAdress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxServerAdress.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxServerAdress.Name = "textBoxServerAdress";
             this.textBoxServerAdress.Size = new System.Drawing.Size(133, 21);
             this.textBoxServerAdress.TabIndex = 11;
@@ -169,8 +169,8 @@
             // 
             this.radioButtonHTTPS.AutoSize = true;
             this.radioButtonHTTPS.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonHTTPS.Location = new System.Drawing.Point(381, 217);
-            this.radioButtonHTTPS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButtonHTTPS.Location = new System.Drawing.Point(381, 249);
+            this.radioButtonHTTPS.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonHTTPS.Name = "radioButtonHTTPS";
             this.radioButtonHTTPS.Size = new System.Drawing.Size(58, 18);
             this.radioButtonHTTPS.TabIndex = 12;
@@ -182,8 +182,8 @@
             // 
             this.radioButtonHTTP.AutoSize = true;
             this.radioButtonHTTP.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonHTTP.Location = new System.Drawing.Point(303, 217);
-            this.radioButtonHTTP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButtonHTTP.Location = new System.Drawing.Point(303, 249);
+            this.radioButtonHTTP.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonHTTP.Name = "radioButtonHTTP";
             this.radioButtonHTTP.Size = new System.Drawing.Size(52, 18);
             this.radioButtonHTTP.TabIndex = 13;
@@ -194,8 +194,8 @@
             // textBoxPort
             // 
             this.textBoxPort.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPort.Location = new System.Drawing.Point(303, 247);
-            this.textBoxPort.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPort.Location = new System.Drawing.Point(303, 217);
+            this.textBoxPort.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPort.Name = "textBoxPort";
             this.textBoxPort.Size = new System.Drawing.Size(133, 21);
             this.textBoxPort.TabIndex = 14;
@@ -207,7 +207,7 @@
             this.buttonGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonGenerate.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonGenerate.Location = new System.Drawing.Point(361, 276);
-            this.buttonGenerate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonGenerate.Margin = new System.Windows.Forms.Padding(2);
             this.buttonGenerate.Name = "buttonGenerate";
             this.buttonGenerate.Size = new System.Drawing.Size(75, 23);
             this.buttonGenerate.TabIndex = 18;
@@ -285,15 +285,15 @@
             this.Controls.Add(this.textBoxX3Name);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxUser);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.labelPort);
+            this.Controls.Add(this.labelProtocole);
+            this.Controls.Add(this.labelSrv);
+            this.Controls.Add(this.labelDossierX3);
+            this.Controls.Add(this.labelPassword);
+            this.Controls.Add(this.labelUser);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(504, 396);
             this.MinimumSize = new System.Drawing.Size(504, 396);
             this.Name = "Form6ConfigGroovy";
@@ -307,12 +307,12 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label labelUser;
+        private System.Windows.Forms.Label labelPassword;
+        private System.Windows.Forms.Label labelDossierX3;
+        private System.Windows.Forms.Label labelSrv;
+        private System.Windows.Forms.Label labelProtocole;
+        private System.Windows.Forms.Label labelPort;
         private System.Windows.Forms.TextBox textBoxUser;
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.TextBox textBoxX3Name;

@@ -180,8 +180,8 @@
             this.Font = new System.Drawing.Font("Bahnschrift Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.MaximumSize = new System.Drawing.Size(630, 500);
-            this.MinimumSize = new System.Drawing.Size(18, 47);
+            this.MaximumSize = new System.Drawing.Size(505, 397);
+            this.MinimumSize = new System.Drawing.Size(505, 397);
             this.Name = "Form1Accueil";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "4CAD - Installeur suivi atelier";
