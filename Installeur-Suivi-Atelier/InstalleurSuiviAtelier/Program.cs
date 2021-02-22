@@ -17,8 +17,8 @@ namespace InstalleurSuiviAtelier
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form3JavaPathAndOpenJDK());
-            //Application.Run(new Form1Accueil());
+            //Application.Run(new Form3JavaPathAndOpenJDK());
+            Application.Run(new Form1Accueil());
         }
     }
 }

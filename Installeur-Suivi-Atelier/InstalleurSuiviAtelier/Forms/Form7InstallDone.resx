@@ -118,7 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value>L'installation est terminée, pour tester le bon fonctionnement de l'application web, vous pouvez suivre ces instructions :
+    <value>Redémarrez/démarrez le service tomcat lié a cette instalation pour générer l'application web !!
+
+
+Pour tester le bon fonctionnement de l'application web, vous pouvez suivre ces instructions :
 
 Dans un navigateur web sur le serveur, saisir l’url de l’application (http://localhost:numéro de port/SuiviAtelier) pour vérifier qu’elle fonctionne. Le numéro de port étant celui qui vous avez choisi lors de l’installation du serveur Tomcat.  
 
