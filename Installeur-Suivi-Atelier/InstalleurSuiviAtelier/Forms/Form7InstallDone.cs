@@ -15,12 +15,25 @@ namespace InstalleurSuiviAtelier.Forms
         public Form7InstallDone()
         {
             InitializeComponent();
+            aRecuLeMessage = false;
         }
+
+        //Flag pour savoir si on lui montre la pop up ou si on termine l'install
+        public bool aRecuLeMessage = false;
 
         private void buttonClose_Click(object sender, EventArgs e)
         {
-            this.Close();
-            this.Hide();
+            if (aRecuLeMessage)
+            {
+                this.Close();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Veuillez bien lire les instructions afin de tester le bon déroulement de l'installation.", "IMPORTANT",
+    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                aRecuLeMessage = true;
+            }
         }
 
         private void button1_Click_1(object sender, EventArgs e)

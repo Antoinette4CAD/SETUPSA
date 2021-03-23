@@ -17,6 +17,7 @@ namespace InstalleurSuiviAtelier.Forms
         public Form2CreationRepSA()
         {
             InitializeComponent();
+            buttonSuivant.Enabled = false;
         }
 
         private void ButtonSuivant_Click(object sender, EventArgs e)
@@ -108,6 +109,13 @@ namespace InstalleurSuiviAtelier.Forms
         private void buttonAnnuler_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void textBoxEmplacement_TextChanged(object sender, EventArgs e)
+        {
+
+            //TODO : Vérifier que il n'y ai pas de < dans le text 
+            buttonSuivant.Enabled = true; 
         }
     }
 }

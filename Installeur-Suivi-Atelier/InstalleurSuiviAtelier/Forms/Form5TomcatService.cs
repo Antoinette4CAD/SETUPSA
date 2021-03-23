@@ -127,7 +127,7 @@ namespace InstalleurSuiviAtelier.Forms
                     labelInfo.Text = "- Nom du service Tomcat (copiez/collez dans le configurateur Tomcat) :\n\n" + InstallInfos.getSvcName() + "_" + InstallInfos.versionInstall + "\n\n- Passez le lancement en automatique.";
                     break;
                 case 1:
-                    labelInfo.Text = "Utilisez le compte de services windows";
+                    labelInfo.Text = "Utilisez le compte de services X3";
                     break;
                 case 2:
                     labelInfo.Text = "Lignes à ajouter en fin de bloc : \n\n" + @"-Dfile.encoding=UTF-8

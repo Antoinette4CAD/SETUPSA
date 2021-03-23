@@ -29,10 +29,10 @@ namespace InstalleurSuiviAtelier.Forms
             t2.SetToolTip(labelPassword, "Mot de passe de cet utilisateur X3.");
 
             ToolTip t3 = new ToolTip();
-            t3.SetToolTip(labelDossierX3, "Nom du dossier X3 utilisant le Suivi Atelier.");
+            t3.SetToolTip(labelDossierX3, "Nom du pool de WS X3.");
 
             ToolTip t4 = new ToolTip();
-            t4.SetToolTip(labelSrv, "Adresse du serveur sur lequel tourne X3.");
+            t4.SetToolTip(labelSrv, "Adresse ou nom du serveur sur lequel tourne X3.");
 
             ToolTip t5 = new ToolTip();
             t5.SetToolTip(labelPort, "Port utilisé par X3.");

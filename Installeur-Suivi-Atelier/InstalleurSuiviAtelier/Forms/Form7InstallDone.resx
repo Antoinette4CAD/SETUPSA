@@ -118,17 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value>Redémarrez/démarrez le service tomcat lié a cette instalation pour générer l'application web !!
+    <value>SUIVEZ CES INSTRUCTION POUR TESTER LE BON FONCTIONNEMENT : 
 
 
-Pour tester le bon fonctionnement de l'application web, vous pouvez suivre ces instructions :
-
-Dans un navigateur web sur le serveur, saisir l’url de l’application (http://localhost:numéro de port/SuiviAtelier) pour vérifier qu’elle fonctionne. Le numéro de port étant celui qui vous avez choisi lors de l’installation du serveur Tomcat.  
-
-Pour permettre un accès à l’application depuis l’extérieur (http://&lt;nom_serveur&gt;:numéro de port/SuiviAtelier), le(s) port(s) doit/doivent être ouvert(s) (selon qu’il s’agit d’une installation mono ou multi serveurs) dans le Pare-feu Windows. Si vous avez besoin d'aide pour ouvrir un port, cliquez sur le bouton ci-dessous
+  1) Redémarrez/démarrez le service tomcat lié a cette installation pour générer l'application web.
 
 
-Exemple : http://192.168.24.231:8092/SuiviAtelier </value>
+  2) Dans un navigateur web (depuis le serveur d'installation), saisir l’url de l’application :
+       http://localhost:&lt;numéro_de_port&gt;/SuiviAtelier pour vérifier qu’elle fonctionne. 
+       Le numéro de port étant celui qui vous avez choisi lors de l’installation du serveur Tomcat.  
+
+
+   2bis) Pour permettre un accès à l’application depuis une autre machine, 
+             utiliser une adresse du type : http://&lt;nom_serveur&gt;:&lt;numéro_de_port&gt;/SuiviAtelier).
+             Le port utilisé doit être ouvert dans le Pare-feu Windows.
+             Si vous avez besoin d'aide pour ouvrir un port, cliquez sur le bouton ci-dessous
+             Exemple : http://192.168.24.231:8092/SuiviAtelier </value>
   </data>
   <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

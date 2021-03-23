@@ -203,17 +203,6 @@
     <None Include="app.manifest" />
     <None Include="InstalleurSuiviAtelier_TemporaryKey.pfx" />
     <None Include="packages.config" />
-    <None Include="Properties\Resources\webApps\SuiviAtelier-5.0.6-pro.war" />
-    <None Include="Properties\Resources\webApps\SuiviAtelier-5.0.7-pro.war" />
-    <None Include="Properties\Resources\webApps\SuiviAtelier-5.0.9-pro.war" />
-    <None Include="Properties\Resources\webApps\SuiviAtelier-5.1.1-pro.war" />
-    <None Include="Properties\Resources\webApps\SuiviAtelier-5.1.3-pro.war" />
-    <None Include="Properties\Resources\webApps\SuiviAtelier-5.1.5-pro.war" />
-    <None Include="Properties\Resources\webApps\SuiviAtelier-5.2.0-pro.war" />
-    <None Include="Properties\Resources\webApps\SuiviAtelier-5.2.1-pro.war" />
-    <None Include="Properties\Resources\webApps\SuiviAtelier-5.2.2-pro.war" />
-    <None Include="Properties\Resources\webApps\SuiviAtelier-5.2.3-pro.war" />
-    <None Include="Properties\Resources\webApps\SuiviAtelier-5.2.4-pro.war" />
     <None Include="Properties\Resources\webApps\SuiviAtelier-5.2.7-pro.war" />
     <None Include="Properties\Resources\webApps\SuiviAtelier-5.2.8-pro.war" />
     <None Include="Properties\Resources\webApps\SuiviAtelier-5.2.9-pro.war" />
@@ -253,5 +242,6 @@
     <Content Include="Properties\Resources\images\JavaTab.png" />
     <Content Include="Properties\Resources\images\LogOnTab.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -56,10 +56,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 19.8F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(154, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(205, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(301, 70);
+            this.label1.Size = new System.Drawing.Size(373, 84);
             this.label1.TabIndex = 0;
             this.label1.Text = "Intialisation du fichier \r\nde configuration X3";
             // 
@@ -67,21 +66,19 @@
             // 
             this.labelUser.AutoSize = true;
             this.labelUser.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUser.Location = new System.Drawing.Point(239, 91);
-            this.labelUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelUser.Location = new System.Drawing.Point(268, 111);
             this.labelUser.Name = "labelUser";
-            this.labelUser.Size = new System.Drawing.Size(66, 14);
+            this.labelUser.Size = new System.Drawing.Size(130, 18);
             this.labelUser.TabIndex = 1;
-            this.labelUser.Text = "Utilisateur :";
+            this.labelUser.Text = "Utilisateur WS X3 :";
             // 
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
             this.labelPassword.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPassword.Location = new System.Drawing.Point(223, 123);
-            this.labelPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelPassword.Location = new System.Drawing.Point(293, 151);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(83, 14);
+            this.labelPassword.Size = new System.Drawing.Size(105, 18);
             this.labelPassword.TabIndex = 2;
             this.labelPassword.Text = "Mot de passe :";
             // 
@@ -89,32 +86,29 @@
             // 
             this.labelDossierX3.AutoSize = true;
             this.labelDossierX3.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDossierX3.Location = new System.Drawing.Point(192, 155);
-            this.labelDossierX3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDossierX3.Location = new System.Drawing.Point(246, 190);
             this.labelDossierX3.Name = "labelDossierX3";
-            this.labelDossierX3.Size = new System.Drawing.Size(112, 14);
+            this.labelDossierX3.Size = new System.Drawing.Size(152, 18);
             this.labelDossierX3.TabIndex = 3;
-            this.labelDossierX3.Text = "Nom du dossier X3 :";
+            this.labelDossierX3.Text = "Nom du pool de WS :";
             // 
             // labelSrv
             // 
             this.labelSrv.AutoSize = true;
             this.labelSrv.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSrv.Location = new System.Drawing.Point(209, 186);
-            this.labelSrv.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelSrv.Location = new System.Drawing.Point(258, 229);
             this.labelSrv.Name = "labelSrv";
-            this.labelSrv.Size = new System.Drawing.Size(95, 14);
+            this.labelSrv.Size = new System.Drawing.Size(140, 18);
             this.labelSrv.TabIndex = 4;
-            this.labelSrv.Text = "Adresse serveur :";
+            this.labelSrv.Text = "Adresse serveur X3 :";
             // 
             // labelProtocole
             // 
             this.labelProtocole.AutoSize = true;
             this.labelProtocole.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelProtocole.Location = new System.Drawing.Point(241, 250);
-            this.labelProtocole.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelProtocole.Location = new System.Drawing.Point(319, 309);
             this.labelProtocole.Name = "labelProtocole";
-            this.labelProtocole.Size = new System.Drawing.Size(63, 14);
+            this.labelProtocole.Size = new System.Drawing.Size(79, 18);
             this.labelProtocole.TabIndex = 5;
             this.labelProtocole.Text = "Protocole :";
             // 
@@ -122,57 +116,56 @@
             // 
             this.labelPort.AutoSize = true;
             this.labelPort.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPort.Location = new System.Drawing.Point(264, 220);
-            this.labelPort.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelPort.Location = new System.Drawing.Point(331, 270);
             this.labelPort.Name = "labelPort";
-            this.labelPort.Size = new System.Drawing.Size(38, 14);
+            this.labelPort.Size = new System.Drawing.Size(67, 18);
             this.labelPort.TabIndex = 6;
-            this.labelPort.Text = "Port : ";
+            this.labelPort.Text = "Port X3 : ";
             // 
             // textBoxUser
             // 
             this.textBoxUser.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUser.Location = new System.Drawing.Point(303, 88);
-            this.textBoxUser.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxUser.Location = new System.Drawing.Point(404, 108);
+            this.textBoxUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxUser.Name = "textBoxUser";
-            this.textBoxUser.Size = new System.Drawing.Size(133, 21);
+            this.textBoxUser.Size = new System.Drawing.Size(176, 24);
             this.textBoxUser.TabIndex = 8;
             // 
             // textBoxPassword
             // 
             this.textBoxPassword.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPassword.Location = new System.Drawing.Point(303, 120);
-            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPassword.Location = new System.Drawing.Point(404, 148);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(133, 21);
+            this.textBoxPassword.Size = new System.Drawing.Size(176, 24);
             this.textBoxPassword.TabIndex = 9;
             // 
             // textBoxX3Name
             // 
             this.textBoxX3Name.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxX3Name.Location = new System.Drawing.Point(303, 152);
-            this.textBoxX3Name.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxX3Name.Location = new System.Drawing.Point(404, 187);
+            this.textBoxX3Name.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxX3Name.Name = "textBoxX3Name";
-            this.textBoxX3Name.Size = new System.Drawing.Size(133, 21);
+            this.textBoxX3Name.Size = new System.Drawing.Size(176, 24);
             this.textBoxX3Name.TabIndex = 10;
             // 
             // textBoxServerAdress
             // 
             this.textBoxServerAdress.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxServerAdress.Location = new System.Drawing.Point(303, 184);
-            this.textBoxServerAdress.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxServerAdress.Location = new System.Drawing.Point(404, 226);
+            this.textBoxServerAdress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxServerAdress.Name = "textBoxServerAdress";
-            this.textBoxServerAdress.Size = new System.Drawing.Size(133, 21);
+            this.textBoxServerAdress.Size = new System.Drawing.Size(176, 24);
             this.textBoxServerAdress.TabIndex = 11;
             // 
             // radioButtonHTTPS
             // 
             this.radioButtonHTTPS.AutoSize = true;
             this.radioButtonHTTPS.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonHTTPS.Location = new System.Drawing.Point(381, 249);
-            this.radioButtonHTTPS.Margin = new System.Windows.Forms.Padding(2);
+            this.radioButtonHTTPS.Location = new System.Drawing.Point(508, 306);
+            this.radioButtonHTTPS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButtonHTTPS.Name = "radioButtonHTTPS";
-            this.radioButtonHTTPS.Size = new System.Drawing.Size(58, 18);
+            this.radioButtonHTTPS.Size = new System.Drawing.Size(72, 22);
             this.radioButtonHTTPS.TabIndex = 12;
             this.radioButtonHTTPS.TabStop = true;
             this.radioButtonHTTPS.Text = "HTTPS";
@@ -182,10 +175,10 @@
             // 
             this.radioButtonHTTP.AutoSize = true;
             this.radioButtonHTTP.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonHTTP.Location = new System.Drawing.Point(303, 249);
-            this.radioButtonHTTP.Margin = new System.Windows.Forms.Padding(2);
+            this.radioButtonHTTP.Location = new System.Drawing.Point(404, 306);
+            this.radioButtonHTTP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButtonHTTP.Name = "radioButtonHTTP";
-            this.radioButtonHTTP.Size = new System.Drawing.Size(52, 18);
+            this.radioButtonHTTP.Size = new System.Drawing.Size(64, 22);
             this.radioButtonHTTP.TabIndex = 13;
             this.radioButtonHTTP.TabStop = true;
             this.radioButtonHTTP.Text = "HTTP";
@@ -194,10 +187,10 @@
             // textBoxPort
             // 
             this.textBoxPort.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPort.Location = new System.Drawing.Point(303, 217);
-            this.textBoxPort.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPort.Location = new System.Drawing.Point(404, 267);
+            this.textBoxPort.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxPort.Name = "textBoxPort";
-            this.textBoxPort.Size = new System.Drawing.Size(133, 21);
+            this.textBoxPort.Size = new System.Drawing.Size(176, 24);
             this.textBoxPort.TabIndex = 14;
             // 
             // buttonGenerate
@@ -206,10 +199,10 @@
             this.buttonGenerate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonGenerate.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonGenerate.Location = new System.Drawing.Point(361, 276);
-            this.buttonGenerate.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonGenerate.Location = new System.Drawing.Point(481, 340);
+            this.buttonGenerate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonGenerate.Name = "buttonGenerate";
-            this.buttonGenerate.Size = new System.Drawing.Size(75, 23);
+            this.buttonGenerate.Size = new System.Drawing.Size(100, 28);
             this.buttonGenerate.TabIndex = 18;
             this.buttonGenerate.Text = "Générer";
             this.buttonGenerate.UseVisualStyleBackColor = false;
@@ -219,18 +212,18 @@
             // 
             this.labelError.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelError.ForeColor = System.Drawing.Color.Red;
-            this.labelError.Location = new System.Drawing.Point(146, 281);
-            this.labelError.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelError.Location = new System.Drawing.Point(195, 346);
             this.labelError.Name = "labelError";
-            this.labelError.Size = new System.Drawing.Size(205, 32);
+            this.labelError.Size = new System.Drawing.Size(273, 39);
             this.labelError.TabIndex = 19;
             this.labelError.Text = "LABEL ERROR";
             // 
             // buttonPrecedent
             // 
-            this.buttonPrecedent.Location = new System.Drawing.Point(240, 317);
+            this.buttonPrecedent.Location = new System.Drawing.Point(320, 390);
+            this.buttonPrecedent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonPrecedent.Name = "buttonPrecedent";
-            this.buttonPrecedent.Size = new System.Drawing.Size(75, 23);
+            this.buttonPrecedent.Size = new System.Drawing.Size(100, 28);
             this.buttonPrecedent.TabIndex = 29;
             this.buttonPrecedent.Text = "< Précédent";
             this.buttonPrecedent.UseVisualStyleBackColor = true;
@@ -239,9 +232,10 @@
             // buttonSuivant
             // 
             this.buttonSuivant.Enabled = false;
-            this.buttonSuivant.Location = new System.Drawing.Point(317, 317);
+            this.buttonSuivant.Location = new System.Drawing.Point(423, 390);
+            this.buttonSuivant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonSuivant.Name = "buttonSuivant";
-            this.buttonSuivant.Size = new System.Drawing.Size(75, 23);
+            this.buttonSuivant.Size = new System.Drawing.Size(100, 28);
             this.buttonSuivant.TabIndex = 28;
             this.buttonSuivant.Text = "Suivant >";
             this.buttonSuivant.UseVisualStyleBackColor = true;
@@ -249,9 +243,10 @@
             // 
             // buttonAnnuler
             // 
-            this.buttonAnnuler.Location = new System.Drawing.Point(402, 317);
+            this.buttonAnnuler.Location = new System.Drawing.Point(536, 390);
+            this.buttonAnnuler.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonAnnuler.Name = "buttonAnnuler";
-            this.buttonAnnuler.Size = new System.Drawing.Size(75, 23);
+            this.buttonAnnuler.Size = new System.Drawing.Size(100, 28);
             this.buttonAnnuler.TabIndex = 27;
             this.buttonAnnuler.Text = "Annuler";
             this.buttonAnnuler.UseVisualStyleBackColor = true;
@@ -261,17 +256,18 @@
             // 
             this.pictureBox1.BackgroundImage = global::InstalleurSuiviAtelier.Properties.Resources._4CAD_Group_Logo;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(4, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(5, 16);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(144, 338);
+            this.pictureBox1.Size = new System.Drawing.Size(192, 416);
             this.pictureBox1.TabIndex = 30;
             this.pictureBox1.TabStop = false;
             // 
             // Form6ConfigGroovy
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(488, 357);
+            this.ClientSize = new System.Drawing.Size(648, 430);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonPrecedent);
             this.Controls.Add(this.buttonSuivant);
@@ -293,9 +289,9 @@
             this.Controls.Add(this.labelUser);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.MaximumSize = new System.Drawing.Size(504, 396);
-            this.MinimumSize = new System.Drawing.Size(504, 396);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximumSize = new System.Drawing.Size(666, 477);
+            this.MinimumSize = new System.Drawing.Size(666, 477);
             this.Name = "Form6ConfigGroovy";
             this.Text = "4CAD - Installeur suivi atelier";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
