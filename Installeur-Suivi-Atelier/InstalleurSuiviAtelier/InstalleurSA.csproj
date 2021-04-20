@@ -34,7 +34,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -159,6 +159,11 @@
     <Compile Include="InstallInfos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="SvcManager.cs" />
     <EmbeddedResource Include="Forms\Form15UpdateSA.resx">
       <DependentUpon>Form15UpdateSA.cs</DependentUpon>
@@ -192,18 +197,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="app.manifest" />
     <None Include="InstalleurSuiviAtelier_TemporaryKey.pfx" />
     <None Include="packages.config" />
-    <None Include="Properties\Resources\webApps\SuiviAtelier-5.2.7-pro.war" />
+    <None Include="Properties\Resources\webApps\SuiviAtelier-5.2.10-pro.war" />
     <None Include="Properties\Resources\webApps\SuiviAtelier-5.2.8-pro.war" />
     <None Include="Properties\Resources\webApps\SuiviAtelier-5.2.9-pro.war" />
     <None Include="Properties\Settings.settings">
@@ -240,7 +240,7 @@
     <Content Include="Properties\Resources\images\check.png" />
     <Content Include="Properties\Resources\images\GeneralTab.png" />
     <Content Include="Properties\Resources\images\JavaTab.png" />
-    <Content Include="Properties\Resources\images\LogOnTab.png" />
+    <Content Include="Properties\Resources\images\OngletLongOn.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

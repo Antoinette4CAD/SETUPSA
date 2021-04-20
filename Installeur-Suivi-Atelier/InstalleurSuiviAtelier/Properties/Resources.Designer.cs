@@ -123,9 +123,9 @@ namespace InstalleurSuiviAtelier.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] SuiviAtelier_5_2_7_pro {
+        internal static byte[] SuiviAtelier_5_2_10_pro {
             get {
-                object obj = ResourceManager.GetObject("SuiviAtelier_5_2_7_pro", resourceCulture);
+                object obj = ResourceManager.GetObject("SuiviAtelier_5_2_10_pro", resourceCulture);
                 return ((byte[])(obj));
             }
         }

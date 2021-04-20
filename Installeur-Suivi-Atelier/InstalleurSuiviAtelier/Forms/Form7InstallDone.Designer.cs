@@ -40,29 +40,28 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 19.8F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(5, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(7, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(281, 35);
+            this.label1.Size = new System.Drawing.Size(350, 42);
             this.label1.TabIndex = 0;
             this.label1.Text = "Installation terminée";
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(11, 56);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox1.Location = new System.Drawing.Point(15, 69);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(466, 248);
+            this.richTextBox1.Size = new System.Drawing.Size(620, 304);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // buttonClose
             // 
             this.buttonClose.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonClose.Location = new System.Drawing.Point(403, 318);
-            this.buttonClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonClose.Location = new System.Drawing.Point(537, 391);
+            this.buttonClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(75, 23);
+            this.buttonClose.Size = new System.Drawing.Size(100, 28);
             this.buttonClose.TabIndex = 2;
             this.buttonClose.Text = "Terminer";
             this.buttonClose.UseVisualStyleBackColor = true;
@@ -70,10 +69,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 318);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(16, 391);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 3;
             this.button1.Text = "Aide";
             this.button1.UseVisualStyleBackColor = true;
@@ -81,17 +80,17 @@
             // 
             // Form7InstallDone
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(488, 357);
+            this.ClientSize = new System.Drawing.Size(648, 430);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.MaximumSize = new System.Drawing.Size(504, 396);
-            this.MinimumSize = new System.Drawing.Size(504, 396);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximumSize = new System.Drawing.Size(666, 477);
+            this.MinimumSize = new System.Drawing.Size(666, 477);
             this.Name = "Form7InstallDone";
             this.Text = "4CAD - Installeur suivi atelier";
             this.ResumeLayout(false);

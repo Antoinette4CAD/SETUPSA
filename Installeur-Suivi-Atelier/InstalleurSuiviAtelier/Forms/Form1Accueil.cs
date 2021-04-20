@@ -111,8 +111,9 @@ namespace InstalleurSuiviAtelier
             }
 
             //On trie la liste par ordre alphabétique
-            listeVersions.Sort();
+            listeVersions.Sort(StringComparer.Ordinal);
             listeVersions.Reverse();
+
             //Puis on ajoute tout à l'élément graphique ListBox
             foreach (string s in listeVersions)
             {

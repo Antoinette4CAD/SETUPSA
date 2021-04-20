@@ -92,7 +92,7 @@
             this.textBoxEmplacement.Name = "textBoxEmplacement";
             this.textBoxEmplacement.Size = new System.Drawing.Size(333, 22);
             this.textBoxEmplacement.TabIndex = 8;
-            this.textBoxEmplacement.Text = "C:\\4CAD\\SuiviAtelier\\Solution_X3Vxx\\Tomcat-8.5";
+            this.textBoxEmplacement.Text = "C:\\4CAD\\SuiviAtelier\\<NomPoolWSX3>\\Tomcat-8.5";
             // 
             // labelError
             // 

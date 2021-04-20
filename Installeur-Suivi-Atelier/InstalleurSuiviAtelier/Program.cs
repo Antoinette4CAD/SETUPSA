@@ -17,7 +17,7 @@ namespace InstalleurSuiviAtelier
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form3JavaPathAndOpenJDK());
+            //Application.Run(new Form5TomcatService());
             Application.Run(new Form1Accueil());
         }
     }
