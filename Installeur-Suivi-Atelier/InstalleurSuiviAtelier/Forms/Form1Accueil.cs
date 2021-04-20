@@ -105,14 +105,16 @@ namespace InstalleurSuiviAtelier
                     resourceName = resourceName.Insert(1, ".");
                     resourceName = resourceName.Insert(3, ".");
 
+                    //Console.WriteLine(resourceName);
+                    
                     listeVersions.Add(resourceName);
                 }
 
             }
 
             //On trie la liste par ordre alphabétique
-            listeVersions.Sort(StringComparer.Ordinal);
-            listeVersions.Reverse();
+            //listeVersions.Sort();
+            //listeVersions.Reverse();
 
             //Puis on ajoute tout à l'élément graphique ListBox
             foreach (string s in listeVersions)

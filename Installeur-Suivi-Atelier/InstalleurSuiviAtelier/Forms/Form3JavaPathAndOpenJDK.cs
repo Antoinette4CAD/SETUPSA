@@ -100,7 +100,7 @@ namespace InstalleurSuiviAtelier.Forms
 
         private String GetJavaInstallationPath()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
             String javaKey = "SOFTWARE\\JavaSoft\\Java Runtime Environment";
             using (var baseKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64).OpenSubKey(javaKey))
             {
